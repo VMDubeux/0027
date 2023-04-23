@@ -1418,8 +1418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59eabf864c8a857479298ebeae16c339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jogador: {fileID: 0}
-  Velocidade: 5
+  Player: {fileID: 1573172883715546, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
+  EnemySpeed: 5
 --- !u!136 &136079381028039656
 CapsuleCollider:
   m_ObjectHideFlags: 1

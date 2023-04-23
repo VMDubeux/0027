@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2705,69 +2705,45 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+    - target: {fileID: 4056259443474578, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
       propertyPath: m_LocalPosition.x
       value: -26.83
       objectReference: {fileID: 0}
-    - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+    - target: {fileID: 4056259443474578, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+    - target: {fileID: 4056259443474578, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
       propertyPath: m_LocalPosition.z
       value: -21.91
       objectReference: {fileID: 0}
-    - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+    - target: {fileID: 4056259443474578, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+    - target: {fileID: 4056259443474578, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+    - target: {fileID: 4056259443474578, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+    - target: {fileID: 4056259443474578, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+    - target: {fileID: 4056259443474578, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1884102019447498, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
-      propertyPath: m_Name
-      value: Jogador
-      objectReference: {fileID: 0}
-    - target: {fileID: 114240463659201816, guid: 4b3bb44effa49480d8d18049684cc33a,
+    - target: {fileID: 114457715649234596, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30,
         type: 2}
-      propertyPath: Bala
+      propertyPath: GameOverText
       value: 
-      objectReference: {fileID: 1826845318185780, guid: 4771099cc18cb6146b3ba07b97b26e9c,
-        type: 2}
-    - target: {fileID: 114240463659201816, guid: 4b3bb44effa49480d8d18049684cc33a,
-        type: 2}
-      propertyPath: CanoDaArma
-      value: 
-      objectReference: {fileID: 2037813728}
-    - target: {fileID: 114135333458066176, guid: 4b3bb44effa49480d8d18049684cc33a,
-        type: 2}
-      propertyPath: MascaraChao.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 114135333458066176, guid: 4b3bb44effa49480d8d18049684cc33a,
-        type: 2}
-      propertyPath: TextoGameOver
-      value: 
-      objectReference: {fileID: 199688284}
-    - target: {fileID: 1884102019447498, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
-      propertyPath: m_TagString
-      value: Jogador
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1320272340}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1179121621 stripped
 Transform:
@@ -3460,12 +3436,7 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &1665214584 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1884102019447498, guid: 4b3bb44effa49480d8d18049684cc33a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1178924254}
---- !u!4 &1665214590 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a,
+  m_PrefabParentObject: {fileID: 1573172883715546, guid: 01fbbc45f0ca8c54ea7ccec8636d9a30,
     type: 2}
   m_PrefabInternal: {fileID: 1178924254}
 --- !u!4 &1684842663 stripped
@@ -4523,34 +4494,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &2037813728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2037813729}
-  m_Layer: 0
-  m_Name: CanoDaArma
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2037813729
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2037813728}
-  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.059, y: 2.21, z: 1.844}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1665214590}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2072468062
 Prefab:
   m_ObjectHideFlags: 0

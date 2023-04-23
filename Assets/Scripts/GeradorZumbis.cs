@@ -8,12 +8,10 @@ public class GeradorZumbis : MonoBehaviour {
     private float contadorTempo = 0;
     public float TempoGerarZumbi = 1;
 
-	// Use this for initialization
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
 
         contadorTempo += Time.deltaTime;

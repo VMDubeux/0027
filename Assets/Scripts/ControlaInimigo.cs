@@ -2,55 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlaInimigo : MonoBehaviour {
+public class ControlaInimigo : MonoBehaviour
+{
+    public GameObject Player;
+    public float EnemySpeed = 5;
+    private Rigidbody _enemyRigidbody;
+    private Animator _enemyAnimator;
 
-    public GameObject Jogador;
-    public float Velocidade = 5;
-    private Rigidbody rigidbodyInimigo;
-    private Animator animatorInimigo;
+    void Start()
+    {
+        Player = GameObject.FindWithTag("Player");
+        int _kindZumbiGenerator = Random.Range(1, 28);
+        transform.GetChild(_kindZumbiGenerator).gameObject.SetActive(true);
+        _enemyRigidbody = GetComponent<Rigidbody>();
+        _enemyAnimator = GetComponent<Animator>();
+    }
 
-	// Use this for initialization
-	void Start () {
-        Jogador = GameObject.FindWithTag("Jogador");
-        int geraTipoZumbi = Random.Range(1, 28);
-        transform.GetChild(geraTipoZumbi).gameObject.SetActive(true);
-        rigidbodyInimigo = GetComponent<Rigidbody>();
-        animatorInimigo = GetComponent<Animator>();
+    void Update()
+    {
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     void FixedUpdate()
     {
-        float distancia = Vector3.Distance(transform.position, Jogador.transform.position);
+        float _distance = Vector3.Distance(transform.position, Player.transform.position);
 
-        Vector3 direcao = Jogador.transform.position - transform.position;
+        Vector3 _direction = Player.transform.position - transform.position;
 
-        Quaternion novaRotacao = Quaternion.LookRotation(direcao);
-        rigidbodyInimigo.MoveRotation(novaRotacao);
+        Quaternion _newRotation = Quaternion.LookRotation(_direction);
+        _enemyRigidbody.MoveRotation(_newRotation);
 
-        if (distancia > 2.5)
+        if (_distance > 2.5)
         {
-            rigidbodyInimigo.MovePosition(
-                rigidbodyInimigo.position +
-                direcao.normalized * Velocidade * Time.deltaTime);
+            _enemyRigidbody.MovePosition(
+                _enemyRigidbody.position +
+                _direction.normalized * EnemySpeed * Time.deltaTime);
 
-            animatorInimigo.SetBool("Atacando", false);
+            _enemyAnimator.SetBool("Atacando", false);
         }
         else
         {
-            animatorInimigo.SetBool("Atacando", true);
+            _enemyAnimator.SetBool("Atacando", true);
         }
     }
 
-    void AtacaJogador ()
+    void AtackPlayer()
     {
         Time.timeScale = 0;
-        Jogador.GetComponent<ControlaJogador>().TextoGameOver.SetActive(true);
-        Jogador.GetComponent<ControlaJogador>().Vivo = false;
+        float _damage = Random.Range(10f, 25f);
+        Player.GetComponent<ControlaJogador>().Life -= 25f;
+        Player.GetComponent<ControlaJogador>().ReceiveDamage(_damage);
+
     }
 }
